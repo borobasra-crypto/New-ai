@@ -25,3 +25,16 @@ Favorites, history, theme, language, settings and unlocked prompt IDs are stored
 ## Important
 This version intentionally has no coins, daily bonus, points or database.
 Ads are represented by a clearly labeled demo unlock flow; real ad-network integration requires the provider's current SDK/policy and cannot be faked as a guaranteed rewarded ad.
+
+## How to post into a specific category
+Open `js/data.js`. Add a new object inside the `prompts` array. The key field is:
+`category:['AI Girl','Cinematic','Trending']`
+Put every category where the post should appear. No database is required.
+
+Example:
+```js
+{id:'p5',title:'My New Prompt',category:['AI Girl','Cinematic','Trending'],rating:0,uses:'0',premium:false,unlock:0,tags:['Girl','Cinematic'],image:'https://example.com/image.jpg',description:'Short description.',prompt:'Your full AI prompt here.',youtube:'https://www.youtube.com/watch?v=VIDEO_ID'}
+```
+Use **1280 × 720 px (16:9)** for the thumbnail.
+Each category/search page starts with **5 posts** and loads **3 more** when the user reaches the bottom.
+Favorites use LocalStorage. History stores the last **5 viewed posts**.
