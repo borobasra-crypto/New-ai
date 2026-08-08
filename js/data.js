@@ -1,3 +1,7 @@
+// Add a new post by copying one object below and changing its fields.
+// category MUST contain one or more names from `categories`.
+// Example: category:['AI Girl','Cinematic','Realistic']
+// The post will automatically appear in those category pages.
 export const categories=['All','AI Boy','AI Girl','Premium','Thumbnail','Outfit','Filter','Cinematic','Realistic','Trending'];
 export const prompts=[
 {id:'p1',title:'Cinematic Girl Look',category:['AI Girl','Cinematic','Realistic'],rating:4.9,uses:'2.4K',premium:true,unlock:5,tags:['Girl','Cinematic','Portrait','4K'],image:'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=80',description:'Create a cinematic, realistic portrait with dramatic lighting and a polished editorial look.',prompt:'Create a cinematic realistic portrait of a confident young woman, dramatic soft rim light, natural skin texture, 85mm portrait lens, shallow depth of field, editorial color grading, ultra detailed, 4K.',youtube:'https://www.youtube.com/results?search_query=cinematic+ai+portrait+prompt'},
